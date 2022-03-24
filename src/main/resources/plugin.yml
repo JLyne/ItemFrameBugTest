@@ -1,0 +1,4 @@
+name: Itemframebugtest
+version: '${version}'
+main: uk.co.notnull.itemframebugtest.itemframebugtest.Itemframebugtest
+api-version: 1.17
