@@ -8,7 +8,7 @@ The result should be something like this:
 ![image](https://user-images.githubusercontent.com/4615316/160029098-1ff1d288-8386-44e1-a383-9769cbd73c0a.png)
 
 
-However on 1.18.2 Paper the initial result is this:
+However on 1.18.2 Paper build 267 the initial result is this:
 ![image](https://user-images.githubusercontent.com/4615316/160029112-5668b0be-e9ef-475d-9b04-c5bca600ea40.png)
 
 
