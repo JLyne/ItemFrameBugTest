@@ -34,10 +34,12 @@ public final class Itemframebugtest extends JavaPlugin {
 		world.getBlockAt(new Location(world, 0,  6, 0)).setType(Material.OBSIDIAN);
 
 		//Item frames on each side
-		itemFrames.add(spawnItemFrame(new Location(world, 0, 6, -1)));
-		itemFrames.add(spawnItemFrame(new Location(world, -1, 6, 0)));
-		itemFrames.add(spawnItemFrame(new Location(world, 0, 6, 1)));
-		itemFrames.add(spawnItemFrame(new Location(world, 1, 6, 0)));
+		getServer().getScheduler().scheduleSyncDelayedTask(this, () -> {
+			itemFrames.add(spawnItemFrame(new Location(world, 0, 6, -1)));
+			itemFrames.add(spawnItemFrame(new Location(world, -1, 6, 0)));
+			itemFrames.add(spawnItemFrame(new Location(world, 0, 6, 1)));
+			itemFrames.add(spawnItemFrame(new Location(world, 1, 6, 0)));
+		}, 200L);
 	}
 
 	@Override
@@ -65,6 +67,7 @@ public final class Itemframebugtest extends JavaPlugin {
 		ItemFrame frame = world.spawn(location, ItemFrame.class);
 
 		frame.setFacingDirection(BlockFace.UP, true);
+		frame.setFixed(true);
 
 		return frame;
 	}
