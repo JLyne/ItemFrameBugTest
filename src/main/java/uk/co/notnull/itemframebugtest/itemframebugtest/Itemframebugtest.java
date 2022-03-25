@@ -16,7 +16,7 @@ public final class Itemframebugtest extends JavaPlugin {
 
 	@Override
 	public void onEnable() {
-		world = getServer().getWorld("hub");
+		world = getServer().getWorld("world");
 
 		//Dirt floor
 		world.getBlockAt(new Location(world, 0, 4, 0)).setType(Material.DIRT);
